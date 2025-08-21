@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Krishna Motivation",
+    "description": "Use to get Gita Gyan (knowledge) and Krishna quotes to your web browser, motivating you and teaching you more about Hinduism!",
+    "version": "1.0",
+    "action"{
+        "default_popup": "popup/popup.html"
+    },
+    "icons":{
+        
+    }
+}
