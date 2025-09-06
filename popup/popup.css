@@ -1,0 +1,43 @@
+body{
+    width: 250px;
+    padding: 15px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+/* everything below relates to the notification frequency timer*/ 
+
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: rgb(129, 129, 222);
+    color: white;
+    padding: 5px 10px;
+    border:none;
+    cursor: pointer;
+}
+.content{
+    display:none;
+    color:black;
+    padding: 5px 5px;
+    background-color: rgb(129, 129, 222);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+}
+
+select{
+    background:rgb(129, 129, 222);
+   color: white;
+}
+
+
+.dropdown:hover .content{
+    display:block;
+}
+
+.dropdown:hover button{
+    background-color: hsl(147, 77%, 41%);
+}
+
