@@ -1,11 +1,57 @@
 body{
     width: 250px;
+    height:420px;
+    overflow: hidden;
     padding: 15px;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
 }
 
+
+.slider{
+    position: relative;
+    width:100%;
+    margin: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.slider img{
+    width:100%;
+    display: none; 
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1s;
+
+}
+
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    padding: 10 px 15px;
+    background-color: rgba(0, 0, 255, 0.447);
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+.previous{
+    left: 0;
+
+}
+.next{
+    right:0;
+
+}
+@keyframes fade{
+    from{opacity: .5}
+    to{opacity: 1}
+}
 /* everything below relates to the notification frequency timer*/ 
 
 .dropdown{

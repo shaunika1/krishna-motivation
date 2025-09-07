@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishna Motivation</title>
     <link rel="stylesheet" href="popup.css">
+    
 </head>
-
-
 
 <body>
 
 
    <div class="container">
         <h1 class="title">Jai Shree Krishna!</h1>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="study">
+                    <img class="slide" src="../images/study.jpg" alt="Krishna and Arjun on chariot">
+                    <img class="slide" src="../images/study1.png" alt="Krishna and Arjun on chariot">
+                    <img class ="slide" src="../images/study2.jpg" alt="Krishna and Arjun on chariot">
+                    <img class ="slide" src="../images/study3.jpg" alt="Krishna and Arjun on chariot">
+                    <img class ="slide" src="../images/study4.jpeg" alt="Krishna and Arjun on chariot">
+                </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        </div>
         <!-- below is code for on/off button -->
         <div class="study">
             Study Mode 
@@ -22,9 +35,11 @@
         </div>
 
 
+
+
 <!--below contains the code for the notification frequency--> 
         <div class="dropdown">
-            <button>Notification Frequency</button>
+            <button>Notification Frequency:</button>
             <div class="content">
                 <select id="notifs" name="notifs">
                     <option value="random" >random intervals, surprise me!</option>
@@ -41,5 +56,6 @@
 
         </div>
    </div> 
+   <script src="popup.js"></script>
 </body>
 </html>
