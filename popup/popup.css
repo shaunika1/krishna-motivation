@@ -6,9 +6,14 @@ body{
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    background-color: rgb(137, 219, 116);
+    background-color: rgb(21, 75, 8);
 
 }
+h1{
+    text-align:center;
+    color: whitesmoke;
+}
+
 /* everything below relates to image slideshow*/
 .slider{
     position: relative;
@@ -28,7 +33,6 @@ body{
     object-fit: contain;
     object-position: center;
     position: absolute;
-   
 
 }
 
@@ -49,6 +53,7 @@ img.displaySlide{
     border: none;
     cursor: pointer;
 }
+
 .previous{
     left: 0;
 }
@@ -63,6 +68,7 @@ img.displaySlide{
 
 .dropdown{
     display: inline-block;
+   text-align: center;
 }
 .dropdown button{
     background-color: rgb(129, 129, 222);
@@ -70,6 +76,8 @@ img.displaySlide{
     padding: 5px 10px;
     border:none;
     cursor: pointer;
+    object-position: center;
+    
 }
 .content{
     display:none;
