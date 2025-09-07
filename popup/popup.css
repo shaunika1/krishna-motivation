@@ -6,27 +6,36 @@ body{
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    background-color: rgb(137, 219, 116);
+
 }
-
-
+/* everything below relates to image slideshow*/
 .slider{
     position: relative;
     width:100%;
+    height: 300px;
     margin: auto;
-    object-fit: cover;
+    object-fit: contain;
     overflow: hidden;
+    
 }
 
 .slider img{
+    background-image: linear-gradient(rgb(230, 186, 43), rgb(6, 10, 104));
     width:100%;
+    height: 100%;
     display: none; 
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+   
+
 }
 
 img.displaySlide{
     display: block;
     animation-name: fade;
     animation-duration: 1s;
-
 }
 
 .slider button{
@@ -42,11 +51,9 @@ img.displaySlide{
 }
 .previous{
     left: 0;
-
 }
 .next{
     right:0;
-
 }
 @keyframes fade{
     from{opacity: .5}
