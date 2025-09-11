@@ -1,8 +1,11 @@
+//all of the below javascript is for the image slideshow!
+
 const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
 let intervalId = null;
 
-const prev = document.querySelector(".prev");   // select prev button
+//onclick on html wasn't working for me so I did it this way
+const prev = document.querySelector(".prev");   
 const next = document.querySelector(".next");
 
 
@@ -42,6 +45,8 @@ function nextSlide(){
     showSlide(slideIndex);
 }
 
-
+//adds direct event listener event
 next.addEventListener("click", nextSlide);
 prev.addEventListener("click", prevSlide);
+
+
