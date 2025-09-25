@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Motivation</title>
+    <link rel="stylesheet" href="popup.css">
+    
+</head>
+
+<body>
+
+   <div class="container">
+        <h1 class="title">Jai Shree Krishna!</h1>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="study">
+                    <img class="slide" src="../images/study.jpg" alt="Krishna and Arjun on chariot">
+                    <img class="slide" src="../images/study1.png" alt="Krishna and Arjun on chariot">
+                    <img class ="slide" src="../images/study2.jpg" alt="Krishna and Arjun on chariot">
+                    <img class ="slide" src="../images/study3.jpg" alt="Krishna and Arjun on chariot">
+                    <img class ="slide" src="../images/study4.jpeg" alt="Krishna and Arjun on chariot">
+                </div>
+            <button class="prev" >&#10094;</button>
+            <button class="next" >&#10095;</button>
+        </div>
+        </div>
+
+
+        <!-- below is code for on/off button -->
+        <div class="study">
+            <h5 class="study">Study Mode</h5>
+            <div class="toggle" id="toggleButton">
+                <div class="on">ON</div>
+                <div class="off">OFF</div>
+                <div class="circle"></div>
+                
+            </div>
+            
+            
+        </div>
+
+
+
+
+    <!--below contains the code for the notification frequency--> 
+        <div class="dropdown">
+            <button>Notification Frequency:</button>
+            <div class="content">
+                <select id="notifs" name="notifs">
+                    <option value="random" >random intervals, surprise me!</option>
+                    <option value="0">0 (no notifications please!)</option>
+                    <option value="5">every 5 minutes</option>
+                    <option value="15">every 15 minutes</option>
+                    <option value="30">every 30 minutes</option>
+                    <option value="60">once every hour</option>
+                    <option value="120">once every two hours</option>
+                </select>
+            </div>
+
+            <!-- below is code for inspire me (instant notification generator)-->
+        
+            <button id="inspire">Inspire me!</button>
+
+        </div>
+   </div> 
+   <script src="popup.js"></script>
+</body>
+</html>

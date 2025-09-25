@@ -1,0 +1,129 @@
+body{
+    width: 250px;
+    height:550px;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 75, 8);
+
+}
+h1{
+    text-align:center;
+    color: whitesmoke;
+}
+
+/* everything below relates to image slideshow*/
+.slider{
+    position: relative;
+    width:100%;
+    height: 300px;
+    margin: auto;
+    object-fit: contain;
+    overflow: hidden;
+    
+}
+
+.slider img{
+    background-image: linear-gradient(rgb(230, 186, 43), rgb(6, 10, 104));
+    width:100%;
+    height: 100%;
+    display: none; 
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    padding: 10 px 15px;
+    background-color: rgba(0, 0, 255, 0.447);
+    color:white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.previous{
+    left: 0;
+}
+.next{
+    right:0;
+}
+@keyframes fade{
+    from{opacity: .5}
+    to{opacity: 1}
+}
+/*everything below relates to study button*/
+.study{
+    top:350px;
+    height:10px;
+    align-items:center;
+    object-position: center;
+    background: none;
+   text-align: center;
+   color: white;
+    
+}
+.toggle{
+    width: 50px;
+    height: 20px;
+    background-color:blanchedalmond;
+    border-radius: 20px;
+    position: relative;
+   
+}
+
+
+/* everything below relates to the notification frequency timer*/ 
+
+.dropdown{
+    display: inline-block;
+   
+   position:absolute;
+   top: 500px;
+ 
+}
+.dropdown button{
+    background-color: rgb(129, 129, 222);
+    color: white;
+    padding: 5px 10px;
+    border:none;
+    cursor: pointer;
+    object-position: center;
+    
+}
+.content{
+    display:none;
+    color:black;
+    padding: 5px 5px;
+    background-color: rgb(129, 129, 222);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+}
+
+select{
+    background:rgb(129, 129, 222);
+   color: white;
+}
+
+
+.dropdown:hover .content{
+    display:block;
+}
+
+.dropdown:hover button{
+    background-color: hsl(147, 77%, 41%);
+}
+
