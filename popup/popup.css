@@ -90,19 +90,17 @@ img.displaySlide{
 
 .dropdown{
     display: inline-block;
-   
    position:absolute;
    top: 500px;
  
 }
-.dropdown button{
+.styled-button{
     background-color: rgb(129, 129, 222);
     color: white;
     padding: 5px 10px;
     border:none;
     cursor: pointer;
     object-position: center;
-    
 }
 .content{
     display:none;
