@@ -17,12 +17,11 @@ h1{
 /* everything below relates to image slideshow*/
 .slider{
     position: relative;
+    display: flex;
     width:100%;
     height: 300px;
     margin: auto;
-    object-fit: contain;
     overflow: hidden;
-    
 }
 
 .slider img{
@@ -52,7 +51,6 @@ img.displaySlide{
     color:white;
     border: none;
     cursor: pointer;
-    
 }
 
 .previous{
@@ -67,14 +65,14 @@ img.displaySlide{
 }
 /*everything below relates to study button*/
 .study{
-    top:350px;
-    height:10px;
+    width: 100%;
+    top:550px;
+    height: 1px;
     align-items:center;
     object-position: center;
     background: none;
    text-align: center;
    color: white;
-    
 }
 .toggle{
     width: 50px;
@@ -102,18 +100,22 @@ img.displaySlide{
     cursor: pointer;
     object-position: center;
 }
+.styled-button:hover {
+    background-color: hsl(147, 77%, 41%);
+}
 .content{
     display:none;
     color:black;
     padding: 5px 5px;
     background-color: rgb(129, 129, 222);
-    min-width: 100px;
+    /* min-width: 100px; */
     box-shadow: 2px 2px 5px black;
 }
 
 select{
     background:rgb(129, 129, 222);
    color: white;
+   cursor: pointer;
 }
 
 
@@ -121,7 +123,7 @@ select{
     display:block;
 }
 
-.dropdown:hover button{
-    background-color: hsl(147, 77%, 41%);
+.choose{
+    display: flex;  
+    flex-direction: column;
 }
-
